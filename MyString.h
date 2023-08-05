@@ -1,7 +1,3 @@
-//
-// Created by kamil on 05.08.2023.
-//
-
 #ifndef PARSERCSS_MYSTRING_H
 #define PARSERCSS_MYSTRING_H
 
