@@ -161,7 +161,7 @@ int MyString::find(char c) {
 }
 
 
-MyString MyString::substring_after(char c) {
+MyString MyString::substringUntil(char c) {
     int pos = find(c);
     if (pos == -1) {
         return MyString(data);
@@ -171,6 +171,23 @@ MyString MyString::substring_after(char c) {
         new_data[i] = data[i];
     }
     new_data[pos] = '\0';
+    return MyString(new_data);
+}
+
+MyString  MyString::substringAfter(char c) {
+    int pos = find(c);
+    if (pos == -1) {
+        return MyString(data);
+    }
+    if (pos + 1 == length) {
+        MyString s = " ";
+        return s;
+    }
+    char* new_data = new char[length - pos];
+    for (int i = pos; i < length; i++) {
+        new_data[i - pos] = data[i + 1];
+    }
+    new_data[length - pos] = '\0';
     return MyString(new_data);
 }
 

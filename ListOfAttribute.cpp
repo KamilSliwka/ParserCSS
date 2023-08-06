@@ -1,5 +1,6 @@
+#pragma once
 #include <iostream>
-#include "MyString.cpp"
+#include "MyString.h"
 
 using namespace std;
 

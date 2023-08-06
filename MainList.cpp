@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include "ListOfSelector.cpp"
 #include "ListOfAttribute.cpp"

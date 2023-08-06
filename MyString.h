@@ -32,7 +32,9 @@ public:
 
     MyString removeSpaces(const MyString &str);
 
-    MyString substring_after(char c);
+    MyString substringUntil(char c);
+
+    MyString substringAfter(char c);
 
     int find(char c);
 
