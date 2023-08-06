@@ -3,4 +3,4 @@ project(ParserCSS)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(ParserCSS main.cpp MyString.cpp MyString.h ListOfAttribute.cpp ListOfSelector.cpp)
+add_executable(ParserCSS main.cpp MyString.cpp MyString.h ListOfAttribute.cpp ListOfSelector.cpp MainList.cpp)
